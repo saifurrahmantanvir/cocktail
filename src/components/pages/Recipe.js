@@ -27,43 +27,7 @@ const Recipe = function () {
    }
 
    return (
-      // <React.Fragment>
-      //    <h3 style={{ margin: '5px 0' }}>Recipe No- {id}</h3>
-      //    {
-      //       recipe ? recipe.drinks.map(item => (
-      //          <RecipeDetails key={item.idDrink}>
-      //             <Figure>
-      //                <Image src={item.strDrinkThumb} alt='' />
-      //             </Figure>
-      //             <h2>{item.strDrink}</h2>
-
-      //             <Tag>{item.strAlcoholic}</Tag>
-      //             <Tag>{item.strCategory}</Tag>
-
-      //             <Title>Instruction</Title>
-      //             <Instruction>{item.strInstructions}</Instruction>
-
-      //             <List>
-      //                <ListItem>
-      //                   <Title>Ingredients</Title>
-      //                   <Title>Measures</Title>
-      //                </ListItem>
-      //                {
-      //                   getIngredients(item).map(([ingName, ingMeasure], index) => (
-      //                      <ListItem key={index}>
-      //                         <span>{ingName}</span>
-      //                         <span>{ingMeasure}</span>
-      //                      </ListItem>
-      //                   ))
-      //                }
-      //             </List>
-      //          </RecipeDetails>
-
-      //       )) : null
-      //    }
-      // </React.Fragment>
       <React.Fragment>
-         {/* <h3 style={{ margin: '20px 0 40px' }}>Recipe No- {id}</h3> */}
          {
             recipe ? recipe.drinks.map(item => (
                <RecipeDetails key={item.idDrink}>
