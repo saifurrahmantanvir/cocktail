@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&display=swap');
+
+
+@font-face {
+   font-family: 'SerifBook';
+   src: url('./fonts/SansSerifBookFLF.otf');
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: inherit;
 }
+
+::selection {
+   background-color: #ffa754;
+   color: #333;
+}
+
+html {
+   box-sizing: border-box;
+   font-size: 62.5%;
+}
+
+@media only screen and (max-width: 62.5em) {
+   html {
+      font-size: 55%;
+   }
+}
+
+@media only screen and (max-width: 53.125em) {
+   html {
+      font-size: 50%;
+   }
+}
+
+@media only screen and (max-width: 40.625em) {
+   html {
+      font-size: 45%;
+   }
+}
+
+body {
+   font-family: "Josefin sans", sans-serif;
+   background-color: #f1f1f1;
+   color: #333;
+}
+
+select {
+   font-family: 'SerifBook', sans-serif;
+}
+
+button,
+input {
+   font-family: inherit;
+}
+
+button {
+   font-size: 2rem;
+   padding: 1rem 2rem;
+   letter-spacing: -1px;
+   background: none;
+   border: none;
+   border-radius: 0.5rem;
+   cursor: pointer;
+}
+
+h2 {
+   font-size: 3.5rem;
+   color: #333;
+}
+
+h3 {
+   font-size: 2.2rem; 
+   color: #333;
+}
+
+h4 {
+   font-size: 1.6rem;
+   color: #333;
+}
+
+a { text-decoration: none; }
+p { font-size: 1.8rem; }
