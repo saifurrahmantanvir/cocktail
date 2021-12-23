@@ -20,7 +20,7 @@ export const RecipeDetails = styled.div`
 export const Figure = styled.figure`
    justify-self: center;
    display: inline-block;
-   height: 28rem;
+   height: 26rem;
    position: relative;
 
    &::before {
